@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Payment Details - Energym</title>
+    <link rel="stylesheet" href="bank.css">
+    
+</head>
+<body>
+    <section class="bank-section">
+        <div class="bank-container">
+            <div class="bank-content">
+                <a href="training.html" class="back-btn">&larr; Back to Packages</a>
+                
+                <h1 class="bank-title">Payment Details</h1>
+                <h2 class="package-info"><span id="packageName"></span> Package</h2>
+                <p class="amount-info">Amount: <span id="packageAmount"></span></p>
+
+                <div class="bank-details">
+                    <h3>Bank Transfer Details</h3>
+                    <div class="detail-item">
+                        <label>Bank Name:</label>
+                        <p class="detail-value">ABC Bank Limited</p>
+                    </div>
+                    <div class="detail-item">
+                        <label>Account Holder:</label>
+                        <p class="detail-value">Energym Fitness</p>
+                    </div>
+                    <div class="detail-item">
+                        <label>Account Number:</label>
+                        <p class="detail-value">1234567890</p>
+                    </div>
+                    <div class="detail-item">
+                        <label>IFSC Code:</label>
+                        <p class="detail-value">ABCD0001234</p>
+                    </div>
+                    <div class="detail-item">
+                        <label>SWIFT Code:</label>
+                        <p class="detail-value">ABCDUS33</p>
+                    </div>
+                    <div class="detail-item">
+                        <label>UPI ID:</label>
+                        <p class="detail-value">energym@upi</p>
+                    </div>
+                </div>
+
+                <div class="payment-instructions">
+                    <h3>Payment Instructions</h3>
+                    <ol>
+                        <li>Transfer the amount to the bank account above</li>
+                        <li>Include your membership ID in the transaction reference</li>
+                        <li>Send confirmation screenshot to support@energym.com</li>
+                        <li>Your membership will be activated within 24 hours</li>
+                    </ol>
+                </div>
+
+              
+                <div class="receipt-upload">
+                    <h3>Upload Payment Receipt</h3>
+                    <p>After completing the payment, please upload your receipt here:</p>
+                    <div class="upload-form">
+                        <input type="file" id="receiptFile" accept="image/*,.pdf" required>
+                        <button id="uploadBtn" class="upload-btn">Upload Receipt</button>
+                    </div>
+                    <p id="uploadMessage" class="upload-message"></p>
+                </div>
+
+                <div class="contact-support">
+                    <h3>Need Help?</h3>
+                    <p>Email: <strong>support@energym.com</strong></p>
+                    <p>Phone: <strong>+1-800-123-4567</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="bank.js"></script>
+</body>
+</html>
