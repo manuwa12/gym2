@@ -200,6 +200,8 @@ body {
     margin-top: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+  
 }
 
 .receipt-upload h3 {
@@ -221,6 +223,7 @@ body {
     gap: 10px;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 
 #receiptFile {
@@ -234,6 +237,21 @@ body {
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/*recipt button*/
+ .upload-btn {
+            text-decoration: none;
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        .upload-btn:hover {
+            background-color: #0056b3;
+        }
 
 #receiptFile:hover {
     border-color: #ff6b35;
